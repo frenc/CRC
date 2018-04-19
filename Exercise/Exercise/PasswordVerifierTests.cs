@@ -18,6 +18,7 @@ namespace TestApp.Exercise_1
         [Test]
         public void ShouldThrowExceptionIfPasswordHasNotAtLeastEightCharacters()
         {
+            // arrange
             const string password = "aaaaaa";
 
             // act
