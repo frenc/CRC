@@ -33,5 +33,15 @@ namespace Exercises.Exercise1
                 throw new NoDigitException();
             }
         }
+
+        public bool Compare(string password1, string password2)
+        {
+            if (string.IsNullOrEmpty(password1) || string.IsNullOrEmpty(password2))
+            {
+                throw new NullPasswordException();
+            }
+
+            return StringComparer.Ordinal.Compare(password1, password2) == 0;
+        }
     }
 }
