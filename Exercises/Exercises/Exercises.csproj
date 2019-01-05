@@ -69,6 +69,8 @@
     <Compile Include="Exercise1\Exceptions\ToShortPasswordException.cs" />
     <Compile Include="Exercise1\PasswordVerifier.cs" />
     <Compile Include="Exercise1\VerifyPasswordTest.cs" />
+    <Compile Include="Exercise2\Calculator.cs" />
+    <Compile Include="Exercise2\CalculatorDivisionTests.cs" />
     <Compile Include="Exercise2\CalculatorSumTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

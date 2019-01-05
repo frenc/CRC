@@ -8,7 +8,18 @@ namespace Exercises.Exercise2
         [Test]
         public void ItShouldSumTwoNumbers()
         {
+            // Arrange
+            const decimal firstNumber = 12.3m;
+            const decimal secondNumber = 10.3m;
+            const decimal expectedResult = 22.6m;
+            var calculator = new Calculator();
 
+            // Act
+            var result = calculator.Sum(firstNumber, secondNumber);
+
+
+            // Assert
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }
