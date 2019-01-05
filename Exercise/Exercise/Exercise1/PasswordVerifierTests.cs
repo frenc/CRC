@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Exercise
+namespace Exercise.Exercise1
 {
     [TestFixture]
     public sealed class VerifyTests
