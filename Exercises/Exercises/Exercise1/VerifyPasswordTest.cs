@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
 
-namespace Exercise.Exercise1
+namespace Exercises.Exercise1
 {
     [TestFixture]
-    public sealed class VerifyTests
+    public sealed class VerifyPasswordTest
     {
         [SetUp]
         public void SetUp()
