@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercise1\ComparePasswordsTest.cs" />
     <Compile Include="Exercise1\Exceptions\NoDigitException.cs" />
     <Compile Include="Exercise1\Exceptions\NoLowerCaseException.cs" />
     <Compile Include="Exercise1\Exceptions\NoUpperCaseException.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Exercise1\Exceptions\ToShortPasswordException.cs" />
     <Compile Include="Exercise1\PasswordVerifier.cs" />
     <Compile Include="Exercise1\VerifyPasswordTest.cs" />
+    <Compile Include="Exercise2\CalculatorSumTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
