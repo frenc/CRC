@@ -61,12 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercise1\Exceptions\NoDigitException.cs" />
+    <Compile Include="Exercise1\Exceptions\NoLowerCaseException.cs" />
+    <Compile Include="Exercise1\Exceptions\NoUpperCaseException.cs" />
+    <Compile Include="Exercise1\Exceptions\NullPasswordException.cs" />
+    <Compile Include="Exercise1\Exceptions\ToShortPasswordException.cs" />
+    <Compile Include="Exercise1\PasswordVerifier.cs" />
     <Compile Include="Exercise1\VerifyPasswordTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
