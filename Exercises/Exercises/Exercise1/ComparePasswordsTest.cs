@@ -38,13 +38,9 @@ namespace Exercises.Exercise1
             // arrange
 
             // act
-            void Execute()
-            {
-                _passwordVerifier.Compare(password1, password2);
-            }
 
             // assert
-            Assert.That(Execute, Throws.InstanceOf<NullPasswordException>());
+            Assert.That(() => _passwordVerifier.Compare(password1, password2), Throws.InstanceOf<NullPasswordException>());
         }
     }
 }
