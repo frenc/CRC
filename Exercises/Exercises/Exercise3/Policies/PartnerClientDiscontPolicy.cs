@@ -1,4 +1,5 @@
-﻿namespace Exercises.Exercise3.Policies
+﻿
+namespace Exercises.Exercise3.Policies
 {
     public sealed class  PartnerClientDiscontPolicy : IDiscontPolicy
     {

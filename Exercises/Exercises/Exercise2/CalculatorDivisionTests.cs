@@ -37,13 +37,9 @@ namespace Exercises.Exercise2
             const decimal secondNumber = 0m;
 
             // Act
-            void Execute()
-            {
-                _calculator.Divide(firstNumber, secondNumber);
-            }
 
             // Assert
-            Assert.That(Execute, Throws.InstanceOf<DivideByZeroException>());
+            Assert.That(() => _calculator.Divide(firstNumber, secondNumber), Throws.InstanceOf<DivideByZeroException>());
         }
     }
 }
