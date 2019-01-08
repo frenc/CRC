@@ -22,13 +22,9 @@ namespace Exercises.Exercise1
             const string password = "aaaaaa";
 
             // act
-            void Execute()
-            {
-                _passwordVerifier.Verify(password);
-            }
 
             // assert
-            Assert.That(Execute, Throws.InstanceOf<ToShortPasswordException>());
+            Assert.That(() => _passwordVerifier.Verify(password), Throws.InstanceOf<ToShortPasswordException>());
         }
 
         [Test]
@@ -38,13 +34,9 @@ namespace Exercises.Exercise1
             const string password = null;
 
             // act
-            void Execute()
-            {
-                _passwordVerifier.Verify(password);
-            }
 
             // assert
-            Assert.That(Execute, Throws.InstanceOf<NullPasswordException>());
+            Assert.That(() => _passwordVerifier.Verify(password), Throws.InstanceOf<NullPasswordException>());
         }
 
         [Test]
@@ -54,13 +46,9 @@ namespace Exercises.Exercise1
             const string password = "tetssffffffffffff";
 
             // act
-            void Execute()
-            {
-                _passwordVerifier.Verify(password);
-            }
 
             // assert
-            Assert.That(Execute, Throws.InstanceOf<NoUpperCaseException>());
+            Assert.That(() => _passwordVerifier.Verify(password), Throws.InstanceOf<NoUpperCaseException>());
         }
 
         [Test]
@@ -70,13 +58,9 @@ namespace Exercises.Exercise1
             const string password = "HHHHHHHHHHHHHHHHHHHHHH";
 
             // act
-            void Execute()
-            {
-                _passwordVerifier.Verify(password);
-            }
 
             // assert
-            Assert.That(Execute, Throws.InstanceOf<NoLowerCaseException>());
+            Assert.That(() => _passwordVerifier.Verify(password), Throws.InstanceOf<NoLowerCaseException>());
         }
     }
 }
