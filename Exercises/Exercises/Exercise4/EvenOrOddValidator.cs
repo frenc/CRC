@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Exercises.Exercise4
 {
     public sealed class EvenOrOddValidator
     {
-        OddInformation Validate(List<int> values)
+        public OddInformation Validate(List<int> values)
         {
-            throw new NotImplementedException();
+            return values.Sum() % 2 == 0 ? OddInformation.Eve : OddInformation.Odd;
         }
     }
 }
