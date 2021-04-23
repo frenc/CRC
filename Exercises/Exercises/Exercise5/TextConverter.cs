@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace Exercises.Exercise5
 {
@@ -6,17 +8,25 @@ namespace Exercises.Exercise5
     {
         public string ReversText(string text)
         {
-            throw new NotImplementedException();
+            return string.Concat(text.Reverse());
         }
 
         public string ReversTextAndChangeLetterSize(string text)
         {
-            throw new NotImplementedException();
+            return string
+                .Concat(text
+                    .Reverse()
+                    .Select(x => char.IsLower(x) ? char.ToUpper(x) : char.ToLower(x)));
         }
 
         public string ReversTextAndChangeLetterSizeBeforeSpecialCharacter(string text)
         {
-            throw new NotImplementedException();
+            var splittedText = text.Split('|');
+            var reversedTest = string.Concat(splittedText[0]
+                .Reverse()
+                .Select(x => char.IsLower(x) ? char.ToUpper(x) : char.ToLower(x)));
+            
+            return $"{reversedTest}|{splittedText[1]}";
         }
     }
 }
