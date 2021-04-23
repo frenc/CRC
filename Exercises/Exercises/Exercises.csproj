@@ -89,6 +89,7 @@
     <Compile Include="Exercise4\EvenOrOddValidator.cs" />
     <Compile Include="Exercise4\EvenOrOddValidatorTests.cs" />
     <Compile Include="Exercise4\OddInformation.cs" />
+    <Compile Include="Exercise5\TextConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,6 +3,6 @@
     public enum OddInformation
     {
         Odd,
-        Eve
+        Even
     }
 }

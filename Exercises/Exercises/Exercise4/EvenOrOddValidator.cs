@@ -8,7 +8,7 @@ namespace Exercises.Exercise4
     {
         public OddInformation Validate(List<int> values)
         {
-            return values.Sum() % 2 == 0 ? OddInformation.Eve : OddInformation.Odd;
+            return values.Sum() % 2 == 0 ? OddInformation.Even : OddInformation.Odd;
         }
     }
 }
